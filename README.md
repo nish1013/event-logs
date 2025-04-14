@@ -23,6 +23,7 @@ Kafka is used as the underlying event log system to support durable, ordered, an
 
 ```bash
 docker-compose up -d
+```
 # Event Logs with TypeScript
 
 This project demonstrates core **event log** principles using TypeScript, including:
