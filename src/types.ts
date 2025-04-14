@@ -10,3 +10,8 @@ export interface OrderEvent {
 export enum Topics {
   ORDERS = 'orders',
 }
+
+export enum GroupId {
+  ORDER_PROCESSOR = 'order-processor',
+  ORDER_ANALYTICS = 'order-analytics',
+}

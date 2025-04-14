@@ -1,8 +1,8 @@
 import { Kafka } from 'kafkajs'
-import { OrderEvent, Topics } from './types'
+import { GroupId, OrderEvent, Topics } from './types'
 
 const kafka = new Kafka({ brokers: ['localhost:9092'] })
-const consumer = kafka.consumer({ groupId: 'order-processor' })
+const consumer = kafka.consumer({ groupId: GroupId.ORDER_PROCESSOR })
 
 async function run() {
   await consumer.connect()
@@ -11,7 +11,7 @@ async function run() {
   await consumer.run({
     eachMessage: async ({ message }) => {
       const event: OrderEvent = JSON.parse(message.value!.toString())
-      console.log(`[Consumed]`, event)
+      console.log(`[Consumed by Processor]`, event)
     },
   })
 }
