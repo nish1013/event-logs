@@ -1,0 +1,18 @@
+{
+  "name": "event-logs",
+  "version": "1.0.0",
+  "description": "Kafka event streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kafka",
+    "streams"
+  ],
+  "author": "Nishan Satharasinghe",
+  "license": "MIT",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
