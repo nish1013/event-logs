@@ -14,4 +14,5 @@ export enum Topics {
 export enum GroupId {
   ORDER_PROCESSOR = 'order-processor',
   ORDER_ANALYTICS = 'order-analytics',
+  ORDER_REPLAY_DEMO = 'order-replay-demo',
 }
