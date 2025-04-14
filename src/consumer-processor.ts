@@ -1,7 +1,8 @@
 import { Kafka } from 'kafkajs'
 import { GroupId, OrderEvent, Topics } from './types'
+import { BROKER_URL } from './config'
 
-const kafka = new Kafka({ brokers: ['localhost:9092'] })
+const kafka = new Kafka({ brokers: [BROKER_URL] })
 const consumer = kafka.consumer({ groupId: GroupId.ORDER_PROCESSOR })
 
 async function run() {

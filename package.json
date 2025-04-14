@@ -7,7 +7,8 @@
   "build": "tsc",
   "start:producer": "ts-node src/producer.ts",
   "start:consumer:processor": "ts-node src/consumer-processor.ts",
-  "start:consumer:analytics": "ts-node src/consumer-analytics.ts"
+  "start:consumer:analytics": "ts-node src/consumer-analytics.ts",
+  "start:consumer:replay:demo": "ts-node src/replay-consumer.ts"
 },
   "keywords": [
     "kafka",
